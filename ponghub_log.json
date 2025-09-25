@@ -1,0 +1,24 @@
+{
+  "test": {
+    "service_history": [
+      {
+        "time": "2025-09-25T09:21:20Z",
+        "status": "none"
+      }
+    ],
+    "endpoints": {
+      "https://mail.qq.com/PongHub_2": [
+        {
+          "time": "2025-09-25T09:21:23Z",
+          "status": "none"
+        }
+      ],
+      "https://qq.com/PongHub_1?date=2025-09-25\u0026rand=29": [
+        {
+          "time": "2025-09-25T09:21:20Z",
+          "status": "none"
+        }
+      ]
+    }
+  }
+}
