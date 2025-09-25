@@ -1,0 +1,3 @@
+bash << 'EOF'
+$NOTIFY_BASH
+EOF

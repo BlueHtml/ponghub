@@ -1,14 +1,12 @@
 services:
-  - name: "My Pages"
+  - name: "test"
     endpoints:
-      - url: "https://blog.ch3nyang.top"
-      - url: "https://file.ch3nyang.top"
-      - url: "https://til.ch3nyang.top"
-      - url: "https://mind.ch3nyang.top"
-  - name: "My Services"
-    endpoints:
-      - url: "https://docker-registry.ch3nyang.top/health"
-      - url: "https://2024.ch3nyang.top/health"
-      - url: "https://docker-registry.ch3nyang.top/v2"
-        status_code: 401
-      - url: "https://2024.ch3nyang.top"
+      - url: "{{env(TEST_1_URL)}}?date={{%Y-%m-%d}}&rand={{rand(1,100)}}"
+        headers:
+          Authorization: "{{env(TEST_1_AUTH)}}"
+      - url: "{{env(TEST_2_URL)}}"
+        method: "POST"
+        headers:
+          Content-Type: application/json
+          Authorization: "{{env(TEST_2_AUTH)}}"
+        body: '{"topic": "/ph/{{%s}}","payload": "{{fake_name}}","retain":true}'
