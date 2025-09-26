@@ -2,20 +2,20 @@
   "test": {
     "service_history": [
       {
-        "time": "2025-09-25T09:21:20Z",
+        "time": "2025-09-26T04:44:45Z",
         "status": "none"
       }
     ],
     "endpoints": {
-      "https://mail.qq.com/PongHub_2": [
+      "{{env(TEST_1_URL)}}?date={{%Y-%m-%d}}\u0026rand={{rand(1,100)}}": [
         {
-          "time": "2025-09-25T09:21:23Z",
+          "time": "2025-09-26T04:44:46Z",
           "status": "none"
         }
       ],
-      "https://qq.com/PongHub_1?date=2025-09-25\u0026rand=29": [
+      "{{env(TEST_2_URL)}}": [
         {
-          "time": "2025-09-25T09:21:20Z",
+          "time": "2025-09-26T04:44:50Z",
           "status": "none"
         }
       ]

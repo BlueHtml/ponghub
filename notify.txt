@@ -1,3 +1,3 @@
 test
-	https://qq.com/PongHub_1?date=2025-09-25&rand=29 is unavailable.
-	https://mail.qq.com/PongHub_2 is unavailable.
+	{{env(TEST_1_URL)}}?date={{%Y-%m-%d}}&rand={{rand(1,100)}} is unavailable.
+	{{env(TEST_2_URL)}} is unavailable.
